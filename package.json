@@ -2,6 +2,7 @@
   "name": "blog",
   "version": "1.0.0",
   "private": true,
+  "homepage": "http://jasmineplumb.github.io/jasmineplumb.github.io"
   "description": "blog",
   "author": "jasmineplumb",
   "keywords": [
@@ -10,13 +11,18 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "gatsby": "^5.7.0",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "save-dev": "^0.0.1-security"
   }
 }
